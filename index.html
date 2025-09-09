@@ -8,10 +8,14 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<a class="skip-link" href="#main">Pular para o conteúdo</a>
 		<header class="site-header">
 			<div class="container">
 				<h1 class="brand">Marcos Vinícius</h1>
-				<nav class="nav">
+				<button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">
+					<span class="hamburger" aria-hidden="true"></span>
+				</button>
+                <nav id="mainNav" class="nav" role="navigation" aria-label="Menu principal">
 					<a href="#home">Início</a>
 					<a href="#sobre">Sobre</a>
 					<a href="#habilidades">Habilidades</a>
@@ -21,7 +25,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main id="main">
 			<section id="home" class="hero">
 				<div class="container">
 					<h2>Olá — eu sou <span class="accent">Marcos Vinícius Leite Silva</span></h2>
@@ -87,9 +91,6 @@
 			</div>
 		</footer>
 
-		<script>
-			// atualiza o ano no rodapé
-			document.getElementById('year').textContent = new Date().getFullYear();
-		</script>
+	<script src="script.js" defer></script>
 	</body>
 </html>
