@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Marcos Vinícius — Portfólio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<h1 class="brand">Marcos Vinícius</h1>
+				<nav class="nav">
+					<a href="#home">Início</a>
+					<a href="#sobre">Sobre</a>
+					<a href="#habilidades">Habilidades</a>
+					<a href="#projetos">Projetos</a>
+					<a href="#contato">Contato</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section id="home" class="hero">
+				<div class="container">
+					<h2>Olá — eu sou <span class="accent">Marcos Vinícius Leite Silva</span></h2>
+					<p class="lead">Tenho 24 anos. Estudo Análise e Desenvolvimento de Sistemas na Uninter (2º semestre).</p>
+					<p>Busco aprender e construir projetos práticos em web e software. Conhecimento básico em HTML, CSS, Java e Python.</p>
+				</div>
+			</section>
+
+			<section id="sobre" class="sobre">
+				<div class="container">
+					<h3>Sobre mim</h3>
+					<p>Atualmente moro em Vista Alegre do Alto - SP. Estou no segundo semestre do curso técnico/graduação em Análise e
+						Desenvolvimento de Sistemas na Uninter. Me interesso por desenvolvimento frontend e lógica de programação.</p>
+					<ul class="meta">
+						<li><strong>Idade:</strong> 24</li>
+						<li><strong>Cidade:</strong> Vista Alegre do Alto - SP</li>
+						<li><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas (Uninter) — 2º semestre</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="habilidades" class="habilidades">
+				<div class="container">
+					<h3>Habilidades</h3>
+					<div class="skills">
+						<div class="skill">HTML (básico)</div>
+						<div class="skill">CSS (básico)</div>
+						<div class="skill">Java (básico)</div>
+						<div class="skill">Python (básico)</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projetos" class="projetos">
+				<div class="container">
+					<h3>Projetos</h3>
+					<p>Projetos iniciais e exercícios do curso. Aqui estão alguns exemplos e ideias para experimentar:</p>
+					<div class="projects-grid">
+						<article class="project-card">
+							<h4>Projeto: Página pessoal</h4>
+							<p>Site simples em HTML/CSS para apresentar informações pessoais — este próprio portfólio é um exemplo.</p>
+						</article>
+						<article class="project-card">
+							<h4>Projeto: Pequeno script em Python</h4>
+							<p>Scripts para automatizar tarefas e praticar lógica (leitura de arquivos, manipulação de dados).</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="contato" class="contato">
+				<div class="container">
+					<h3>Contato</h3>
+					<p>Se quiser me contatar, adicione um e-mail ou link do WhatsApp aqui. Por enquanto, salve este arquivo e abra no navegador.</p>
+					<p class="muted">Dica: personalize com seu e-mail e links para redes sociais quando quiser.</p>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© <span id="year"></span> Marcos Vinícius — Estudante de ADS na Uninter</p>
+			</div>
+		</footer>
+
+		<script>
+			// atualiza o ano no rodapé
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
